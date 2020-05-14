@@ -10,7 +10,7 @@ import history from '../../history';
 class SignUpForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
-        const links = [
+        const info = [
             {
                 _id: 0,
                 title: 'At least 6 characters'
@@ -44,29 +44,28 @@ class SignUpForm extends Component {
                 placeholder='Password'
                 name='password'
                 component={FormInput}/>
-                <Field className='sign-up-form__confirm-password'
+                <Field className='sign-up-form__confirm'
                 type='password'
                 title='Confirm Password'
                 placeholder='Confirm Password'
                 name='confirm'
                 component={FormInput}/>
 
-
                 <div className='sign-up-form__line'></div>
-                <Field className='sign-up-form__Back'
-                onClick={() => console.log('back')}
+                <Field className='sign-up-form__login'
+                onClick={() => history.push('/account')}
+                type='submit'
+                title='Creat Account'
+                name='login'
+                component={FormButton}/>
+                <Field className='sign-up-form__back'
+                onClick={() => history.push('/signin')}
                 type='button'
                 title='Back'
-                name='login'
-                short='true'
+                name='back'
+                short={true}
                 component={FormButton}/>
-                <Field className='sign-up-form__login'
-                onClick={() => console.log('tryna submit')}
-                type='submit'
-                title='Login'
-                name='login'
-                component={FormButton}/>
-                <Details className='sign-up-form__details' title='Password requirements' links={links}/>
+                <Details className='sign-up-form__details' title='Password Requirements' info={info}/>
             </form>
         )
     }
