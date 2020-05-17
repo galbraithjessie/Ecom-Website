@@ -6,7 +6,9 @@ import {
 
 const INITIAL_STATE = {
     headerLinks: [],
-    navbarLinks: []
+    navbarLinks: [
+        
+    ]
 }
 
 export default function ( state = INITIAL_STATE, action ) {
