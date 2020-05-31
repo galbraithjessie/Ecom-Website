@@ -1,17 +1,24 @@
 @import 'layout';
 @import 'headernavbar';
+
 @import './auth/signin.scss';
 @import './auth/signup.scss';
+
 @import 'page-title.scss';
 @import 'form-fields.scss';
 @import 'details.scss';
+
 @import './account/purchase-history.scss';
 @import './account/account-information.scss';
 @import './account/account.scss';
+
 @import './shop/shop.scss';
 @import './shop/shop-search-bar.scss';
+@import './shop/shop-product.scss';
+
 @import './quantity.scss';
 @import './green-price-tag.scss';
+
 
 html {
     font-size: 62.5%; // 1rem is 10px
