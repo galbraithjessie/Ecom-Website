@@ -8,7 +8,7 @@ export default class ShopProduct extends Component {
        return(
         <div key={_id} className='shop-product'>
             <div className='shop-product__front'>
-                <img className='shop-product__front__image' src='https://via.placeholder.com/220x220'/>
+                <img className='shop-product__front__imag' src='https://via.placeholder.com/220x220'/>
                 <div className='shop-product__front__title'>{title}</div>
             </div>
             <div className='shop-product__back'>
