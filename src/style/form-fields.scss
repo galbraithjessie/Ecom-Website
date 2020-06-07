@@ -22,7 +22,6 @@
 
 .form-button {
     &__button {
-        box-shadow: none;
         height: 38px;
         width: 243px;
         border-radius: 20px;
@@ -37,7 +36,7 @@
     }
 
     &__gray-button {
-        background-color: #999;
+        background: #999;
         width: 137px;
     }
 
@@ -46,9 +45,8 @@
 .form-button-long-gray {
     display: grid;
     grid-gap: 6.5px;
-
+    
     &__button {
-        box-shadow: none;
         height: 38px;
         width: 243px;
         border-radius: 20px;
@@ -61,7 +59,7 @@
             outline: none;
         }
     }
-    
+
     &__label {
         padding-left: 20px;
         font-size: 14px;

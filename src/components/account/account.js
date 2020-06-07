@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-import { connect } from 'react-redux'
-;import * as actions from '../../actions';
-import AccountInformation from './accountinformation';
-import PurchaseHistory from './puchaseHistory';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
+
+import AccountInformation from './accountInformation';
+import PurchaseHistory from './purchaseHistory';
 
 class Account extends Component {
-    
+
     componentDidMount() {
 
         const headerLinks = [
@@ -27,13 +28,13 @@ class Account extends Component {
                 _id: 0,
                 title: 'Purchase History',
                 active: true,
-                component: <PurchaseHistory />
+                component: <PurchaseHistory/>
             },
             {
                 _id: 1,
                 title: 'Account Information',
                 active: false,
-                component: <AccountInformation />
+                component: <AccountInformation/>
             }
         ]
 
@@ -56,9 +57,8 @@ class Account extends Component {
     render() {
         return (
             <div className='account'>
-               {this.renderContent()}
+                { this.renderContent() }
             </div>
-
         )
     }
 }

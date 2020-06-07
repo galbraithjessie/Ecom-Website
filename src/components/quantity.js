@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
- 
-export default class Quantity extends Component {
+
+class Quantity extends Component {
     render() {
         const { className, quantity } = this.props;
         return (
@@ -18,3 +18,5 @@ export default class Quantity extends Component {
         )
     }
 }
+
+export default Quantity;

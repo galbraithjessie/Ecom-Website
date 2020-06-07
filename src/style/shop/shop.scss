@@ -6,11 +6,12 @@
     grid-template-rows: 15px [search-bar-s] 38px [search-bar-e] 57px [products-s] 1fr [products-e]; 
     grid-template-columns: [s] minmax(100px, 1035px) [e];
     justify-content: center;
-    gap: 57px;
+    // grid-gap: 57px;
 
     &__search-bar {
         grid-row: search-bar-s/search-bar-e;
         grid-column: s/e;
+
     }
 
     &__products {
@@ -25,6 +26,7 @@
         width: 100%;
         justify-self: center;
     }
+    
     &__cart-button {
         z-index: 5;
     }

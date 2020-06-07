@@ -4,8 +4,8 @@ import GreenPriceTag from '../greenPriceTag';
 
 import * as actions from '../../actions';
 import { connect } from 'react-redux';
- 
-export default class ShopProduct extends Component {
+
+class ShopProduct extends Component {
 
     handleAddToCart = () => {
         if(document.getElementById('shop-cart').classList.contains('cart-hidden')) {
@@ -44,3 +44,5 @@ export default class ShopProduct extends Component {
 }
 
 ShopProduct = connect(null, actions)(ShopProduct);
+
+export default ShopProduct;

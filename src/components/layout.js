@@ -8,8 +8,8 @@ class Layout extends Component {
     return (
       <div className='layout'>
         {this.props.children}
-        <Header />
-        <Navbar />
+        <Header/>
+        <Navbar/>
       </div>
     );
   }

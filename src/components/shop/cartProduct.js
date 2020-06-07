@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Quantity from '../quantity';
 import GreenPriceTag from '../greenPriceTag';
- 
-export default class CartProduct extends Component {
+
+class CartProduct extends Component {
     render() {
         console.log(this.props);
         const { className, product, quantity } = this.props;
@@ -18,3 +18,5 @@ export default class CartProduct extends Component {
         )
     }
 }
+
+export default CartProduct;
