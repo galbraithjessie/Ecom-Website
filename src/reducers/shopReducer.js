@@ -25,7 +25,7 @@ export default function(state = INITIAL_STATE, action) {
                 products: action.payload
             }
         case FILTER_PRODUCTS_WITH_CATEGORY_ID:
-            var filteredProducts = []
+            var filteredProducts = [];
             state.products.map(product => {
                 if(product.belongsTo.includes(action.payload)) {
                     filteredProducts.push(product);
@@ -35,8 +35,8 @@ export default function(state = INITIAL_STATE, action) {
                 ...state,
                 filteredProducts
             }
-        case FILTER_PRODUCTS_WITH_QUERY:
-            var filteredProducts = [];
+        case FILTER_PRODUCTS_WITH_QUERY: 
+            var filteredProducts = [];            
             state.products.map(product => {
                 if(product.title.toLowerCase().includes(action.payload.query.toLowerCase())) {
                     filteredProducts.push(product)
@@ -45,7 +45,7 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 filteredProducts
-            }    
+            }
         default: return state;
     }
 }
