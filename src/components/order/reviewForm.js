@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
-import history from '../../history'
+import history from '../../history';
 
 import { FormButton } from '../formFields';
 import ReviewProducts from './reviewProducts';
-
-
-;
 
 class ReviewForm extends Component {
     render() {
@@ -20,7 +17,7 @@ class ReviewForm extends Component {
                     <div className='review-form__legend__quantity'>Quantity</div>
                     <div className='review-form__legend__price'>Price</div>
                 </div>
-                <ReviewProducts className='review-form__products' />
+                <ReviewProducts className='review-form__products'/>
                 <div className='review-form__line'></div>
                 <Field className='review-form__proceed'
                 onClick={() => history.push('/information/shipping')}
@@ -52,9 +49,8 @@ class ReviewForm extends Component {
                         <div className='review-detail__title review-detail-green__title'>Total</div>
                         <div className='review-detail__price review-detail-green__price'>${subtotal + tax}</div>
                     </div>
-
+ 
                 </div>
-                
             </form>
         )
     }

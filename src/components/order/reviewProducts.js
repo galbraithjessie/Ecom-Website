@@ -11,12 +11,10 @@ class ReviewProducts extends Component {
             <div className={`${className} review-products`}>
                 {
                     this.props.cartProducts.map(cartProduct => {
-                       return (
-                       <ReviewProduct 
-                        key={cartProduct._id} 
+                        return <ReviewProduct
+                        key={cartProduct._id}
                         {...cartProduct}
-                       />
-                       )
+                        />
                     })
                 }
             </div>
